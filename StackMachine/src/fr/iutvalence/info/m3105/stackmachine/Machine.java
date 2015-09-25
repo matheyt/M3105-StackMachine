@@ -12,7 +12,7 @@ public class Machine
 		this.programMemory = programMemory;
 		this.cpu.wireToProgramMemory(programMemory);
 		this.cpu.wireToExpStack(expStack);
-		this.cpu.wireToCallStack(callStack);
+		this.cpu.wireToExpStack(callStack);
 		this.cpu.wireToIoSubsystem(ioSystem);
 	}
 
