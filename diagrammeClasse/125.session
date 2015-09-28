@@ -1,0 +1,14 @@
+window_sizes 1280 962 300 900 682 82
+diagrams
+  active  classdiagram_ref 128125 // stackmachine
+    775 643 100 4 0 0
+end
+show_stereotypes
+selected operation_ref 129405 // run
+open
+  class_ref 128125 // CPU
+  class_ref 128253 // IO
+  class_ref 128381 // Machine
+  class_ref 129149 // MachineLauncher
+end
+end
