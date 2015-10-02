@@ -1,14 +1,17 @@
 package fr.iutvalence.info.m3105.stackmachine;
 
 public class Instruction {
-
-	public Instruction(int in, Object object) {
-		// TODO Auto-generated constructor stub
+	private int opCode;
+	private int[] params;
+	
+	public Instruction(int opCode, int[] params) {
+		this.opCode=opCode;
+		this.params= params;
 	}
 
-	public Object getOpCode() {
+	public int getOpCode() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.opCode;
 	}
 
 	public int[] getParams() {

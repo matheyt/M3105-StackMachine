@@ -2,16 +2,21 @@ package fr.iutvalence.info.m3105.stackmachine;
 
 public class Memory {
 
-	public Memory(int i, int j) {
-		// TODO Auto-generated constructor stub
+	private int startAdress;
+	private int endAdress;
+		
+	public Memory(int startAdress, int endAdress) 
+	{
+		this.startAdress=startAdress;
+		this.endAdress= endAdress;
 	}
 
-	public int getStartAddress() {
-		// TODO Auto-generated method stub
-		return 0;
+	public int getStartAddress()
+	{
+		return this.startAdress;
 	}
 
-	public void write(int currentAddress, Object opCode) {
+	public void write(int currentAddress, int opCode) {
 		// TODO Auto-generated method stub
 		
 	}
