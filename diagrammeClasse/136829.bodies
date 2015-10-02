@@ -1,28 +1,13 @@
-package fr.iutvalence.info.m3105.stackmachine;
-
-public class Machine
-{
-	private CPU cpu;
-	private Memory programMemory;
-	private Stack expStack;
-	private Stack callStack;
-	private IO ioSystem;
-
-	public Machine(CPU cpu, Memory programMemory, Stack expStack, Stack callStack, IO ioSystem) throws InvalidParametersException
-	{
+class Machine
+!!!137725.java!!!	Machine(inout cpu : CPU, inout programMemory : Memory, inout expStack : Stack, inout callStack : Stack, inout ioSystem : IO)
 		super();
-		if(expStack==null || cpu==null || programMemory==null || callStack==null || ioSystem==null) 
-				throws new InvalidParametersException;
 		this.cpu = cpu;
 		this.programMemory = programMemory;
 		this.cpu.wireToProgramMemory(programMemory);
 		this.cpu.wireToExpStack(expStack);
 		this.cpu.wireToExpStack(callStack);
 		this.cpu.wireToIoSubsystem(ioSystem);
-	}
-
-	public void loadProgram(Program program) throws AddressOutOfBoundsException
-	{
+!!!137853.java!!!	loadProgram(inout program : Program) : void
 		int currentAddress = this.programMemory.getStartAddress();
 
 		for (int instructionNumber = 0; instructionNumber < program.getInstructionCount(); instructionNumber++)
@@ -40,14 +25,8 @@ public class Machine
 				}
 			}
 		}
-	}
-
-	public void executeProgram(int address)
-	{
+!!!137981.java!!!	executeProgram(in address : int) : void
 		cpu.clearStacks();
 		cpu.setPC(address);
 		cpu.run();
 		System.out.println("(end of program execution)");
-	}
-
-}

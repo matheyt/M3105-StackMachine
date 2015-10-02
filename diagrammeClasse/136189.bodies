@@ -1,0 +1,10 @@
+class Instruction
+!!!136701.java!!!	Instruction(in opCode : int, inout params : int)
+		this.opCode=opCode;
+		this.params= params;
+!!!136829.java!!!	getOpCode() : int
+		// TODO Auto-generated method stub
+		return this.opCode;
+!!!136957.java!!!	getParams() : int
+		// TODO Auto-generated method stub
+		return null;

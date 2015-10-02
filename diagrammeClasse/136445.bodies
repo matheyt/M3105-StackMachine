@@ -1,0 +1,11 @@
+class Memory
+!!!138237.java!!!	Memory(in startAdress : int, in endAdress : int)
+		this.startAdress=startAdress;
+		this.endAdress= endAdress;
+!!!138365.java!!!	getStartAddress() : int
+		return this.startAdress;
+!!!138493.java!!!	write(in currentAddress : int, in opCode : int) : void
+		// TODO Auto-generated method stub
+		
+!!!138621.java!!!	read(in currentAddress : int) : int
+		return 0;

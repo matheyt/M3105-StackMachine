@@ -1,0 +1,20 @@
+class IO
+!!!137085.java!!!	IO(inout inStream : InputStream, inout outStream : OutputStream, inout errStream : OutputStream)
+		super();
+		this.in = new BufferedReader(new InputStreamReader(inStream));
+		this.out = new PrintStream(outStream);
+		this.err = new PrintStream(errStream);
+!!!137213.java!!!	displayRuntimeError(in string : String) : void
+		System.err.println(string);
+		
+!!!137341.java!!!	displayProgramTermination() : void
+		System.out.println("(HALT)");
+!!!137469.java!!!	read() : int
+		this.out.print("? ");
+		String line = this.in.readLine();
+		this.out.println();
+		return Integer.parseInt(line);
+		
+!!!137597.java!!!	write(in op : int) : void
+		this.out.println("> "+op);
+		

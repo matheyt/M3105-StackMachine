@@ -1,0 +1,5 @@
+class Stack
+!!!139133.java!!!	Stack(in i : int)
+		// TODO Auto-generated constructor stub
+!!!139261.java!!!	clear() : void
+		// TODO Auto-generated method stub

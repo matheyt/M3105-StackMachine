@@ -1,6 +1,6 @@
 format 76
-"StackMachine" // StackMachine
-  revision 2
+"fr" // StackMachine::src::fr
+  revision 1
   modified_by 125 ""
   // class settings
   //class diagram settings
@@ -26,5 +26,7 @@ format 76
   package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
   show_infonote default drawing_language default show_stereotype_properties default
   
-  package_ref 134653 // src
+  java_dir "g:/git/M3105-StackMachine/StackMachine/src/fr/"
+  java_package "fr"
+  package_ref 134909 // iutvalence
 end

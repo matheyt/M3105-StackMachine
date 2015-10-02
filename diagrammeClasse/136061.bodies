@@ -1,0 +1,162 @@
+class CPU
+!!!135933.java!!!	run() : void
+		try
+		{
+			while (true)
+			{
+				
+				int opCode = programMemory.read(programCounter);
+				//System.err.print("@" + this.programCounter + ": ");
+				switch (opCode)
+				{
+					case HALT:
+					{
+						// System.err.println("HALT");
+						this.ioSystem.displayProgramTermination();
+						return;
+					}
+					case PUSH:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case ADD:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case SUB:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case MUL:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case DIV:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case MOD:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case NEG:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case LT:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case LE:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case GT:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case GE:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case EQ:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case NE:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case IN:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case OUT:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case CALL:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case RET:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case JP:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case JZ:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case DUP:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					case POP:
+					{
+						// TODO something is missing here...
+						break;
+					}
+					default:
+					{
+						// TODO something is missing here...
+						return;
+					}
+				}
+				this.programCounter++;
+			}
+		}
+		catch (AddressOutOfBoundsException e)
+		{
+			// TODO something is missing here...
+		}
+		catch (IOException e)
+		{
+			// TODO something is missing here...
+		}
+		catch (StackOverflowException e)
+		{
+			// TODO something is missing here...
+		}
+		catch (StackUnderflowException e)
+		{
+			// TODO something is missing here...
+		}		
+!!!136061.java!!!	wireToProgramMemory(inout programMemory : Memory) : void
+		// TODO Auto-generated method stub
+		this.programMemory = programMemory;
+!!!136189.java!!!	wireToExpStack(inout expStack : Stack) : void
+		// TODO Auto-generated method stub
+		
+!!!136317.java!!!	wireToIoSubsystem(inout ioSystem : IO) : void
+		// TODO Auto-generated method stub
+		
+!!!136445.java!!!	clearStacks() : void
+		// TODO Auto-generated method stub
+		
+!!!136573.java!!!	setPC(in address : int) : void
+		// TODO Auto-generated method stub
+		this.programCounter = address;

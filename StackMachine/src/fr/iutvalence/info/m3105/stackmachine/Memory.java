@@ -20,5 +20,9 @@ public class Memory {
 		// TODO Auto-generated method stub
 		
 	}
-
+	
+	public int read (int currentAddress)
+	{
+		return 0;
+	}
 }
