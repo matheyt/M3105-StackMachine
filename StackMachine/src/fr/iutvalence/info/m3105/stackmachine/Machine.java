@@ -12,7 +12,7 @@ public class Machine
 	{
 		super();
 		if(expStack==null || cpu==null || programMemory==null || callStack==null || ioSystem==null) 
-				throws new InvalidParametersException;
+				//throws new InvalidParametersException;
 		this.cpu = cpu;
 		this.programMemory = programMemory;
 		this.cpu.wireToProgramMemory(programMemory);
