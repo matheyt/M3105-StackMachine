@@ -64,7 +64,7 @@ public class MachineLauncher
 			// Safely ignore this error, which is not one
 		}
 		
-		IO ioSystem = new IO(System.in, System.out, System.err);
+		IO ioSystem = new IOConsole(System.in, System.out, System.err);
 		CPU2 v_cpu = new CPU2();		
 		Machine machine = new Machine(v_cpu, programMemory, callStack, expStack, ioSystem);
 		try
