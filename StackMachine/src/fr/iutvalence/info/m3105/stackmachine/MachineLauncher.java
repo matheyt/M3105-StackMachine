@@ -56,8 +56,8 @@ public class MachineLauncher
 		try
 		{
 			programMemory = new Memory2(0x00000000, 0x00000020);
-			expStack = new Stack(16);
-			callStack = new Stack(16);
+			expStack = new Stack2(16);
+			callStack = new Stack2(16);
 		}
 		catch (InvalidParametersException e)
 		{
@@ -65,8 +65,8 @@ public class MachineLauncher
 		}
 		
 		IO ioSystem = new IO(System.in, System.out, System.err);
-		CPU cpu = new CPU2();		
-		Machine machine = new Machine(cpu, programMemory, expStack, callStack, ioSystem );
+		CPU2 v_cpu = new CPU2();		
+		Machine machine = new Machine(v_cpu, programMemory, callStack, expStack, ioSystem);
 		try
 		{
 			machine.loadProgram(program);
